@@ -1,0 +1,213 @@
+:root{
+    --primary_color: #fcdb00;
+    --primary_font: 'PT Sans', sans-serif;
+    --heading_color: #010101;
+    --p_color_1: #555555;
+    --p_color_2: #313841;
+    --p_color_3: #898989;
+    --white: #fff;
+    --non-active: #fded80;
+}
+*{
+    padding:0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--primary_font);
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.row{
+    display: flex;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: var(--primary_color);
+    padding: 60px 0;
+}
+nav .container{
+    align-items: center;
+    color:var(--heading_color);
+    font-weight: 700px;
+}
+nav .logo{
+    width: 60%;
+    align-items: center;
+    font-size: 30px;
+    line-height: 20px;
+    
+}
+nav .logo img{
+    margin-right: 10px;
+}
+nav .menu{
+    width: 40%;
+}
+
+nav .menu ul {
+    justify-content: space-between;
+}
+nav ul li a{
+    display: block;
+    color:var(--heading_color);
+    font-size:22px;
+    line-height: 20px;
+    
+   
+
+}
+/* banner css end*/
+#banner{
+    background-color: var(--primary_color);
+    padding-bottom: 110px;
+    position: relative;
+}
+#banner .row{
+    align-items: center;
+}
+#banner .intro{
+    width: 60%;
+}
+#banner .intro h1{
+    font-size: 32px;
+    line-height: 18px;
+}
+#banner .intro h6{
+    color: var(--p_color_2);
+    font-size: 20px;
+    line-height: 24px;
+    padding: 26px 0;
+    width: 60%;
+}
+#banner .intro p{
+    color: var(--p_color_1);
+    font-size:16px;
+    line-height: 20px;
+    padding-bottom:40px;
+    width: 70%;
+
+}
+#banner .intro i{
+    font-size: 42px;
+    padding-right: 20px;
+}
+#banner .img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+#banner .active{
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+}
+#banner .active .circle{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin-right: 7px;
+}
+#banner .active .circle:nth-child(2), #banner .active .circle:last-child {
+    background-color: var(--non-active);
+}
+
+/* banner css end */
+
+/* feature css end*/
+#feature{
+    padding: 30px 0;
+}
+#feature .info{
+    text-align: center;
+    padding: 88px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#feature .info h3{
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+#feature .info div{
+    width: 70%;
+
+}
+#feature .details{
+    flex-wrap: wrap;
+}
+#feature .details .row{
+    width:calc(100%/3);
+    padding-bottom: 87px;
+}
+#feature .details .row .description h2{
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+#feature .details .row .description p{
+    font-size:16px;
+    line-height: 20px;
+    color: var(--p_color_3);
+}
+#feature .details .icon{
+    padding-right: 34px;
+}
+#feature .details .row i{
+    font-size: 50px;
+}
+/* feature css end*/
+
+/* form css end*/
+#form{
+    background-color: var(--heading_color);
+    padding: 140px 0;
+}
+#form .info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#form .info div{
+    width: 70%;
+}
+#form .info h2{
+    color: var(--primary_color);
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+#form .info p{
+    color: var(--p_color_3);
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 44px;
+}
+#form .button div{
+    margin: auto;
+}
+#form input{
+    width:580px;
+    height: 50px;
+}
+#form button{
+    background-color: var(--primary_color);
+    padding:18px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+/* form css end*/
