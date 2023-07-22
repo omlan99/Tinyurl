@@ -59,12 +59,11 @@ nav .menu ul {
 }
 nav ul li a{
     display: block;
-    color:var(--heading_color);
+    color: var(--heading_color);
+    font-family: var(--primary_font);
     font-size:22px;
+    font-weight: 700;
     line-height: 20px;
-    
-   
-
 }
 /* banner css end*/
 #banner{
@@ -173,6 +172,7 @@ nav ul li a{
 /* form css end*/
 #form{
     background-color: var(--heading_color);
+    color: var(--white);
     padding: 140px 0;
 }
 #form .info{
@@ -203,11 +203,45 @@ nav ul li a{
     width:580px;
     height: 50px;
 }
+#form .button{
+    display: flex;
+    justify-content: center;
+}
+#form .button input{
+    margin-right: 20px;
+}
 #form button{
     background-color: var(--primary_color);
     padding:18px 36px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 10px;
+}
+#form .icons{
+   display: flex;
+   justify-content: center;
+   margin-top: 80px;
+   margin-bottom: 134px;
+}
+#form .icons i{
+    font-size: 42px;
+    color: var(--heading_color);
+    background-color: var(--primary_color);
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 33px;
+    /* 
+    
+    margin-left: auto; */
+}
+#form .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+#form .bottom .address{
+    width: 20%;
 }
 /* form css end*/
